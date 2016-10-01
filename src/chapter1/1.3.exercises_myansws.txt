@@ -1,0 +1,66 @@
+/*
+ * logical-programming-training (c) by Franco Masotti
+ * <franco.masotti@student.unife.it>
+ *
+ * logical-programming-training is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ *
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+1.1
+    1=atom
+    2=variable
+    3=atom
+    4=variable
+    5=atom
+    6=atom
+    7=none
+    8=atom
+    9=variable
+    10=atom
+
+1.2
+    1=complex term; functor loves; arity 2
+    2=atom
+    3=none
+    4=complex; functor boxer; arity 1
+    5=complex; functor=and; arity 2 (first level).
+    6=complex; functor=and; arity 2 (first level).
+    7=none
+    8=none (missing single quotes to be atom)
+    9=none (missing comma or single quotes)
+    10=none (missing closing parenthesis)
+
+1.3
+    facts=iii
+    rules=iiii
+    clauses=iiiiiii
+    predicates=iiiiiii
+    head of the rules=person(X); loves(X,Y); father(Y,Z); father(Y,Z)
+    goals=man(X); woman(X); father(X,Y); man(Y), son(Z,Y); man(Y), daughter(Z,Y)
+
+1.4
+    killer(butch).
+    married(mia,marsellus).
+    married(marsellus,mia).
+    dead(zed).
+    kills(marsellus,X):-
+        footmassage(X,mia).
+    loves(mia,X):-
+        good_dancer(X).
+    eats(jules,X):-
+        nutritious(X).
+    eats(jules,X):-
+        tasty(X).
+
+1.5
+    1=true
+    2=<unkown proc>
+    3=false
+    4=<unkown proc>
+    5=true
+    6=harry, ron
+    7=<unkown proc>
+
