@@ -11,12 +11,17 @@
  * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
  */
 
-point(X,Y):-
-    true.
+vertical(line(point(X,Y),point(X,Z))).
 
-is-vertical(Ax,Ay,Bx,By) :-
-    Ax = Bx.
-    % vertical(line(point(X,Y),point(X,Z))).
+horizontal(line(point(X,Y),point(Z,Y))).
 
-% is-horizontal(X,Y,Z) :-
-%    horizontal(line(point(X,Y),point(Z,Y))).
+run :-
+    vertical(line(point(1,1),point(1,3))),
+    horizontal(line(point(1,3),point(8,3))).
+
+/* Run the following two manually (don't call the goals). */
+findy :-
+    horizontal(line(point(1,1),point(2,Y))).
+
+findany :-
+    horizontal(line(point(2,3),P)).
