@@ -1,0 +1,61 @@
+/*
+ * logical-programming-training (c) by Franco Masotti
+ * <franco.masotti@student.unife.it>
+ *
+ * logical-programming-training is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ *
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+2.1
+    1=T (same)
+    2=F (two different strings)
+    3=T (same)
+    4=T (variable and string)
+    5=F (different strings)
+    6=F (trivial)
+    7=T (if X = food(bread))
+    8=T (if X = bread)
+    9=T (if Y = bread and X = sausage)
+    10=F (X cannot represent 2 different vals simultaneously)
+    11=F (arity is different)
+    12=T (infinite regression case)
+    13=T if X = food(bread) and Y = drink(beer)
+    14=F (X cannot represent 2 different vals simultaneously)
+
+2.2
+    See kb5.pl and kb5.jpg
+
+1.3
+    facts=iii
+    rules=iiii
+    clauses=iiiiiii
+    predicates=iiiiiii
+    head of the rules=person(X); loves(X,Y); father(Y,Z); father(Y,Z)
+    goals=man(X); woman(X); father(X,Y); man(Y), son(Z,Y); man(Y), daughter(Z,Y)
+
+1.4
+    killer(butch).
+    married(mia,marsellus).
+    married(marsellus,mia).
+    dead(zed).
+    kills(marsellus,X):-
+        footmassage(X,mia).
+    loves(mia,X):-
+        good_dancer(X).
+    eats(jules,X):-
+        nutritious(X).
+    eats(jules,X):-
+        tasty(X).
+
+1.5
+    1=true
+    2=<unkown proc>
+    3=false
+    4=<unkown proc>
+    5=true
+    6=harry, ron
+    7=<unkown proc>
+
