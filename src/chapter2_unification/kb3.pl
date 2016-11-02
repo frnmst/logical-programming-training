@@ -33,3 +33,25 @@ k(X) :-
     f(X),
     g(X),
     h(X).
+
+/* This is what really happens; run trace after loading the file.
+ * When you are finished run: notrace. and nodebug.
+?- trace
+|    .
+true.
+
+[trace]  ?- k(X).
+   Call: (7) k(_5328) ? creep
+   Call: (8) f(_5328) ? creep
+   Exit: (8) f(a) ? creep
+   Call: (8) g(a) ? creep
+   Fail: (8) g(a) ? creep
+   Redo: (8) f(_5328) ? creep
+   Exit: (8) f(b) ? creep
+   Call: (8) g(b) ? creep
+   Exit: (8) g(b) ? creep
+   Call: (8) h(b) ? creep
+   Exit: (8) h(b) ? creep
+   Exit: (7) k(b) ? creep
+X = b.
+*/

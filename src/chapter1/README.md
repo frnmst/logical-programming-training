@@ -1,1 +1,0 @@
-Facts, Rules and Queries.

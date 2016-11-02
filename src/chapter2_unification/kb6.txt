@@ -1,0 +1,24 @@
+/*
+ * logical-programming-training (c) by Franco Masotti
+ * <franco.masotti@student.unife.it>
+ *
+ * logical-programming-training is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ *
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+[sentence(Word1,Word2,Word3,Word4,Word5)]
+                    |    
+                    |    
+                    |    
+[word(determiner,Word1), word(noun,Word2), <and so on>]
+    |           |        |             |
+    |           |        |             |
+Word1=_G1       |      Word2=_G2       |
+    |           |        |             |
+    _G1=a      _G1=every _G2=criminal _G2='big kahuna burger'
+    |           |        |             |
+    |           |        |             |
+    #           #        #             #
