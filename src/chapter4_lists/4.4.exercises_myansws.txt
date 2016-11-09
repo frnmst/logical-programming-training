@@ -1,0 +1,62 @@
+/*
+ * logical-programming-training (c) by Franco Masotti
+ * <franco.masotti@student.unife.it>
+ *
+ * logical-programming-training is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ *
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+4.1
+    1=F (different)
+    2=T (because: ?- [X|Y]=[a|[b,c,d]]. X = a, Y = [b, c, d],
+         so [a,b,c,d] is a followed by the rest of the list.
+    3=F (two different things).
+    4=T (like 1).
+    5=F (like 3).
+    6=T (like 2).
+    7=F (an extra empty list is an extra
+         element anways -> different things).
+    8=T (like 6, but shifted to the next index. Since there's nothing after d, 
+         emptylist [] is used as a placeholder).
+    9=T (emptylist is equal to the anonymous variable).
+    10=F (since the anonymous variables cannot be null -
+          it always represents something, so it's nevery empty).
+    11=F (like 9 and 10, see these other:
+          ?- [_] = [_|[]].
+            true.
+
+          ?- [] = [[]|[]].
+            false.
+
+          ?- [_] = [[]|[]].
+            true.
+         ).
+
+4.2
+    1=Correct; 2 elts.
+    2=Correct; 3 elts.
+    3=Incorrect
+    4=Correct; 2 elts.
+    5=Correct; 4 elts.
+    6=Correct; 2 elts.
+    7=Correct; 2 elts.
+    8=Correct; 3 elts.
+
+4.3
+    See kb5.pl
+
+4.4
+    See kb6.pl
+
+4.5
+    See kb7.pl
+
+4.6
+    See kb8.pl
+
+4.7
+    See kb9.jpg
+
