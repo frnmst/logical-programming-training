@@ -17,7 +17,7 @@
  *   both of the same length.
  */
 
-/* Empty lists have the same number of as and bs (0). */
+/* Empty lists have the same number of as and bs (0 of both). */
 a2b([],[]).
 
 /* Thanks to unification we have an implicit conditional test. 
@@ -42,6 +42,6 @@ two :-
 two :-
     a2b([a,a,a,a],X).
 
-/* X always = Y in this case. */
+/* X always = Y in this case = empty list. */
 three :-
     a2b(X,Y).
