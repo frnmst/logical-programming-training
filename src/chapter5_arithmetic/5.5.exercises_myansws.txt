@@ -1,0 +1,37 @@
+/*
+ * logical-programming-training (c) by Franco Masotti
+ * <franco.masotti@student.unife.it>
+ *
+ * logical-programming-training is licensed under a
+ * Creative Commons Attribution-ShareAlike 4.0 International License.
+ *
+ * You should have received a copy of the license along with this
+ * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+ */
+
+5.1
+    1= X=3*4. (unification)
+    2= X=12.
+    3= <incorrect because X is undefined>
+    4= X = Y. (unification)
+    5= true.
+    6= true.
+    7= same as 3
+    8= X = 3.
+    9= false. (because operations are not executed on the right handside).
+    10= X = 3.
+    11= true. (compound, not arithmetic comparison,
+        using a prolog notation +(X,Y) instead of X + Y, 
+        where + is any operator and X (and Y) may be 
+        any number or nested operation).
+    12= same as 11.
+    13= same as 11.
+    14= same as 11.
+    15= false (order of operations make different compounds).
+    16= same as 11.
+    
+5.2
+    See kb9.pl
+
+5.3
+    See kbA.pl

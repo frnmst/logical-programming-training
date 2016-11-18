@@ -11,27 +11,27 @@
  * work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
  */
 
-/* Find max in list of integers. */
+/* Find min in list of integers. */
 
-/* Max = Acc. */
-accMax([],Acc,Acc).
+/* Min = Acc. */
+accMin([],Acc,Acc).
 
-/* Head > Max */
-accMax([Head|Tail],Acc,Max) :-
-    Head > Acc,
-    accMax(Tail,Head,Max).
+/* Head >= Min */
+accMin([Head|Tail],Acc,Min) :-
+    Head >= Acc,
+    accMin(Tail,Acc,Min).
 
-/* Head <= Max */
-accMax([Head|Tail],Acc,Max) :-
-    Head =< Acc,
-    accMax(Tail,Acc,Max).
+/* Head < Min */
+accMin([Head|Tail],Acc,Min) :-
+    Head < Acc,
+    accMin(Tail,Head,Min).
 
-/* Max = car(List)
- * Head = Max
+/* Min = car(List)
+ * Head = Min
  *
  * Through unification:
  * List = [Head|_] = [Head| <rest of list>] = List
  */
-max(List,Max) :-
+min(List,Min) :-
     List = [Head|_],
-    accMax(List,Head,Max).
+    accMin(List,Head,Min).
